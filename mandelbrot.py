@@ -1,8 +1,9 @@
+# -*- coding: utf-8 -*-
 from PIL import Image
 size = 1000
 iteration = 10
-image = Image.new('RGB', (size, size))
-image.show()
+im = Image.new('RGB', (size, size))
+im.show()
 
 
 
@@ -24,9 +25,8 @@ def dive(c,P):
 
 for i in range(size):
     for j in range(size):
-        
         c = complex(x,y)
         val = dive(c,iteration)
         print(val)
-        image.putpixel((i, j), (val,val,val)
-image.show()
+        im.putpixel((i, j), (val,val,val)
+im.show()
