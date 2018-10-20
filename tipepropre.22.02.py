@@ -10,7 +10,7 @@ from PIL import Image
 import numpy as np
 from colorsys import  hls_to_rgb
 import matplotlib
-import matplotlib.pyplot as plt
+from matplotlib import pyplot as plt
 import marshal as m
 
 #from image2gif import writeGif
@@ -231,4 +231,5 @@ def Mandelbrot_harmonique(f,nb,q):
       I.show()
       del I    
 
-Mandelbrot_classique(400)   
+MH(3,100,100)
+
