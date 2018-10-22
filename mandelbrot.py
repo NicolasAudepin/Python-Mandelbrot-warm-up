@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+
 from PIL import Image
 import threading
 size = 3000
