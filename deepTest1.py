@@ -8,7 +8,7 @@ import tensorflow.keras as keras
 import numpy as np 
 import matplotlib.pyplot as plt
 #print(tf.__version__)
-
+print("imported")
 
 np.random.seed(123) #pour avoir une seed fixe
 

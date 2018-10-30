@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from PIL import Image
 import threading
-size = 3000
+size = 300
 iteration = 100
 im = Image.new('RGB', (size, size))
 
