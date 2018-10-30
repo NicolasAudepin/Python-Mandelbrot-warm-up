@@ -11,7 +11,7 @@ class calcThread1(threading.Thread):
         threading.Thread.__init__(self)
 
     def run(self):    
-        for j in range(size):
+        for j in range(int(size/2)):
             for i in range(int(size/2)):
 
                 x=float(i/size)*3-2.3
@@ -20,6 +20,7 @@ class calcThread1(threading.Thread):
                 val = dive(c,iteration)
                 Pval = int(val*255/iteration)
                 self.im.putpixel((i, j), (Pval,Pval,Pval))
+                self.im.putpixel((i,size- j), (Pval,Pval,Pval))
         print("done")
         self.im.show()
 
@@ -32,7 +33,7 @@ class calcThread2(threading.Thread):
 
 
     def run(self):    
-        for j in range(size):
+        for j in range(int(size/2)):
             for i in range(int(size/2)):
 
                 x=float(i/size)*3-2.3+1.5
@@ -41,6 +42,7 @@ class calcThread2(threading.Thread):
                 val = dive(c,iteration)
                 Pval = int(val*255/iteration)
                 self.im.putpixel((i, j), (Pval,Pval,Pval))
+                self.im.putpixel((i,size-j), (Pval,Pval,Pval))
         print("done")
         self.im.show()
 
